@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>借還款系統</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>借還款系統</h1>
+    <p id="currentBalance">尚差金額計算中...</p>
+    <p id="lastUpdated">截至時間：<span id="currentDate"></span></p>
+    <button onclick="location.href='record.html'">查看詳細明細</button>
+    <button onclick="location.href='admin.html'">登入後台</button>
+    <script>
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('zh-TW');
+    </script>
+</body>
+</html>

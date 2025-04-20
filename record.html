@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>借還款明細</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* 設定頁面整體樣式 */
+        body {
+            font-family: "標楷體",Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 表格標題 */
+        th {
+            background-color: #333;
+            color: white;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        /* 表格內容 */
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px 15px;
+        }
+
+        /* 表格內容偶數行背景 */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* 返回首頁按鈕 */
+        button {
+            padding: 5px 10px;
+            margin-top: 20px;
+            background-color: #a9a9a9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* 按鈕 hover 效果 */
+        button:hover {
+            background-color: #494949;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>借還款明細</h1>
+    <div id="recordGrid" class="details-grid">
+        <!-- 明細將透過 JS 加入 -->
+    </div>
+    <img 
+        src="收訖證明.png" 
+        alt="簽名" 
+        style="width: 160px; height: auto; display: block; transform: rotate(20deg); margin-left: auto; margin-right: auto; margin-top: -20px;"
+        >
+    <button onclick="location.href='index.html'">返回首頁</button>
+</body>
+</html>
